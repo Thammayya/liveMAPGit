@@ -13,7 +13,8 @@ public class ScannerEx {
 		System.err.println("2 : ");
 		String num2String = scanner.nextLine();
 		//convert string to int
-		int num1 =  Integer.parseInt(num1String);
+		float num1 =  Float.parseFloat(num1String);
+//		int num1 =  Integer.parseInt(num1String);
 		int num2 =  Integer.parseInt(num2String);
 		standardCalculator.add(num1, num2);
 		// ip perform /, - , * operations

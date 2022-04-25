@@ -1,4 +1,5 @@
 package basics.ip;
+// ip add method for double
 class Calculator {
 	// overloaded functions
 	// same name / diff type of args
