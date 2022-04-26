@@ -3,14 +3,6 @@ package oops;
 // IP is work on two products of your choice.
 public class ClassObjectEx1 {
 	public static void main(String[] args) {
-		// default constructor
-		Product product = new Product();
-		product.getProduct();
-
-		// parameterized constructor
-		Product product2 = new Product("P02", "Java", 50.5f, 5);
-		product2.getProduct();
-
 		// assign values through fields
 		Product product3 = new Product();
 		product3.productId = "P03";
@@ -18,6 +10,14 @@ public class ClassObjectEx1 {
 		product3.price = 500;
 		product3.quantity = 200;
 		product3.getProduct();
+
+		// default constructor
+		Product product = new Product();
+		product.getProduct();
+
+		// parameterized constructor
+		Product product2 = new Product("P02", "Java", 50.5f, 5);
+		product2.getProduct();
 	}
 
 }
