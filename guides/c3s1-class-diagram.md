@@ -1,4 +1,4 @@
-:beginner: _**uml class diagrams**_  
+:beginner: _**uml : class diagram**_  
 
 - The Unified Modeling Language (UML)
   -  is a general-purpose, developmental, modeling language in the field of software engineering
