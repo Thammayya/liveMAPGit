@@ -18,6 +18,8 @@ public class AbstractionEx {
 			vendingMachine = new TeaVendingMachine();
 		}
 		vendingMachine.getBeverage();
+		vendingMachine = new SpecialCoffeeVendingMachine();
+		vendingMachine.getBeverage();
 	}
 }
 
@@ -30,7 +32,13 @@ abstract class VendingMachine {
 
 class CoffeeVendingMachine extends VendingMachine {
 	void getBeverage() {
-		System.err.println("Add milk \n add coffeee \n add sugar");
+		System.err.println("Add milk \n add coffeee powder \n add sugar");
+	}
+}
+
+class SpecialCoffeeVendingMachine extends CoffeeVendingMachine {
+	void getBeverage() {
+		System.err.println("Add milk \n grind fresh roased coffee beans \n add sugar");
 	}
 }
 
