@@ -1,5 +1,5 @@
 package com.demo.oops;
-// implement another realtime example
+// implement another real-time example with netbanking
 public class EncapsulationEx {
 	public static void main(String[] args) {
 		CreditCard creditCard = new CreditCard();
@@ -7,6 +7,7 @@ public class EncapsulationEx {
 //		System.out.println(creditCard.pin);
 		creditCard.setPinNo(12345);
 		creditCard.setPinNo(0);
+		creditCard.setPinNo(5678);
 		System.err.println(creditCard.getCardNo());
 	}
 }
@@ -19,7 +20,7 @@ class CreditCard {
 	public void setPinNo(int pinNo) {
 		//check for 4 digits
 		String pinNoString = Integer.toString(pinNo);
-		if(pinNoString.length() > 0 && pinNoString.length() <5) {
+		if(pinNoString.length() == 4) {
 			this.pinNo = pinNo;
 			System.err.println("Successfully set pin number");
 		}else {
