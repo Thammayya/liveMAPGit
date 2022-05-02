@@ -1,7 +1,9 @@
 package com.demo.oops;
 
+//Run-time polymorphism
 public class AbstractionEx {
 	public static void main(String[] args) {
+		//the implementation is not known in advance
 		VendingMachine vendingMachine = null;
 //		Cannot instantiate the type VendingMachine
 //		vendingMachine = new VendingMachine();
@@ -11,6 +13,7 @@ public class AbstractionEx {
 //		vendingMachine = new TeaVendingMachine();
 //		vendingMachine.getBeverage();
 		double random = Math.random();
+		// only during runitme the implementation is decided / RUN-TIME POLYMORPHISM.
 		System.err.println(random);
 		if (random > 0.5) {
 			vendingMachine = new CoffeeVendingMachine();
