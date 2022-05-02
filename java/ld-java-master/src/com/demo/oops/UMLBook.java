@@ -2,16 +2,16 @@ package com.demo.oops;
 
 public class UMLBook {
 //	instance variables
-	public String titleString;
-	public String authorString;
-	public String languageString;
+	public String title;
+	public String author;
+	public String language;
 	public float price;
 	public boolean available;
 	public String genreString;
 //	assigning values
-	public UMLBook( String titleString, String authorString) {
-		this.titleString = titleString;
-		this.authorString = authorString;
+	public UMLBook( String title, String author) {
+		this.title = title;
+		this.author = author;
 	}
 	public void calculateDiscount(String genreString) {
 		if(genreString.equals("fiction"))
