@@ -27,10 +27,14 @@ public class AbstractionEx {
 }
 
 //abstract ideas / education / transportation / service
-// abstract
+// primaily used for inheritance
 abstract class VendingMachine {
 	// abstract method
 	abstract void getBeverage();
+	// methods with body / concrete methods
+	public void switchOn() {
+		System.err.println("switch on");
+	}
 }
 
 class CoffeeVendingMachine extends VendingMachine {

@@ -1,6 +1,6 @@
 package com.demo.oops;
 
-public class CompileTimePolymprphism {
+public class CompileTimePolymorphism {
 	public static void main(String[] args) {
 		CoffeeVendingMachine2 coffeeVendingMachine2 = new CoffeeVendingMachine2();
 		coffeeVendingMachine2.getCoffee();
