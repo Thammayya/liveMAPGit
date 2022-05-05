@@ -1,5 +1,6 @@
+// implement digital wallet account
 package com.demo.oops.polymorphism;
-public class DynamicPolymorphismEx {
+public class DynamicPolymorphismAbstractEx {
 	public static void main(String[] args) {
 		// reference for abstract class
 		Account account = null;
@@ -9,6 +10,13 @@ public class DynamicPolymorphismEx {
 		account.withdraw();
 //		The method openFD() is undefined for the type Account
 //		account.openFD();
+		System.err.println("DW");
+		account = new DigitalWallet();
+		account.deposit();
+		account.withdraw();
+		account.getBalance();
+//		The method billPayments() is undefined for the type Account
+//		account.billPayments();
 	}
 }
 // represent abstract entities / used for inheritance
@@ -23,10 +31,10 @@ public class DynamicPolymorphismEx {
 	}
 }
 
-interface DebitCard {
-	// default / public & abstract
-	public void withdraw();
-}
+//interface DebitCard {
+//	// default / public & abstract
+//	public void withdraw();
+//}
 
 class SavingsAccount extends Account{
 
@@ -48,6 +56,28 @@ class SavingsAccount extends Account{
 	@Override
 	public void transfer() {
 		System.err.println("transfer amount going to the bank");
+	}
+}
+class DigitalWallet extends Account{
+
+	@Override
+	public void withdraw() {
+	System.err.println("withdraw cash from wallet");
+	}
+
+	@Override
+	public void deposit() {
+		System.err.println("deposit cash in wallet");
+	}
+
+
+	@Override
+	public void transfer() {
+		System.err.println("transfer amount to bank");
+	}
+	
+	public void billPayments() {
+		System.err.println("pay bills");
 	}
 }
 
