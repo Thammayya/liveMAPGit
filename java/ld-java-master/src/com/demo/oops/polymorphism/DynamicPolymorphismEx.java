@@ -32,17 +32,17 @@ class SavingsAccount extends Account{
 
 	@Override
 	public void deposit() {
-		System.err.println("deposit cash");
+		System.err.println("deposit cash in bank");
 	}
 //	The method openFD() of type SavingsAccount must override or implement a supertype method
 //	@Override
 	public void openFD() {
-		System.err.println("open fixed deposit");
+		System.err.println("open fixed deposit in bank");
 	}
 
 	@Override
 	public void transfer() {
-		System.err.println("transfer amount");
+		System.err.println("transfer amount going to the bank");
 	}
 }
 
