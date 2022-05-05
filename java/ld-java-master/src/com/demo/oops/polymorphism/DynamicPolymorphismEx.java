@@ -2,11 +2,16 @@ package com.demo.oops.polymorphism;
 public class DynamicPolymorphismEx {
 	public static void main(String[] args) {
 		// reference for abstract class
-		DynamicPolymorphismEx account = null;
+		Account account = null;
 		// Cannot instantiate the type Account
 //		account = new Account();
+		account = new SavingsAccount();
+		account.withdraw();
+//		The method openFD() is undefined for the type Account
+//		account.openFD();
 	}
 }
+// represent abstract entities / used for inheritance
  abstract class Account {
 	// abstact methods / no body / should be overridden
 	public abstract void withdraw();
