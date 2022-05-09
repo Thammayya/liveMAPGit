@@ -34,3 +34,19 @@ public class UnhandledException {
   - try / suspicious part of code
   - catch / exception handling logic
   - finally / clean up operations
+
+:point_right: keywords
+  
+- try
+- catch
+- finally
+- throw
+- throws
+
+:point_right: structure
+
+- try catch
+- try finally
+- try catch finally
+- try catch (n) finally
+- nested try inside try, catch, finally
