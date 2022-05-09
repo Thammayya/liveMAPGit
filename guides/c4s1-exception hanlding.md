@@ -31,4 +31,6 @@ public class UnhandledException {
 
 - exceptions are hanlded by using 
   - try catch finally block
-
+  - try / suspicious part of code
+  - catch / exception handling logic
+  - finally / clean up operations
