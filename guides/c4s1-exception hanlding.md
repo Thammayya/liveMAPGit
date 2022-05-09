@@ -50,3 +50,6 @@ public class UnhandledException {
 - try catch finally
 - try catch (n) finally
 - nested try inside try, catch, finally
+
+:point_right: types of excpetions
+checked / unchecked  

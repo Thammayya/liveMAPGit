@@ -4,7 +4,7 @@ public class ExceptionPropogationEx {
 	public static void main(String[] args) {
 		System.err.println("do");
 		//main caller / divide called
-//		divideExceptionHandled();
+//		unHandled();
 		try {
 			unHandled();
 		} catch (ArithmeticException exception) {
@@ -25,6 +25,7 @@ public class ExceptionPropogationEx {
 	// may throw ArithmeticException / caller to handle
 	private static void unHandled1() throws ArithmeticException{
 		System.err.println("do unHandled1");
+		// raising exception
 		int result = 100/0;
 //		ArithmeticException arithmeticException = new ArithmeticException();
 //		throw arithmeticException;
