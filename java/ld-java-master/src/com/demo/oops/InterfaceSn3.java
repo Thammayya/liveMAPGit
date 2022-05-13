@@ -8,6 +8,7 @@ interface X11 {
 	public void mx();
 }
 // millenia debit card
+// interface extends interface
 interface Y11 extends X11{
 	public void my();
 }
