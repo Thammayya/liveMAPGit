@@ -56,4 +56,10 @@ public class Book {
 	public String getISBN() {
 		return "ISBN-13:" + this.ISBN;
 	}
+
+	@Override
+	public String toString() {
+		return ISBN + "\t" + authorName + "\t" + price;
+	}
+	
 }

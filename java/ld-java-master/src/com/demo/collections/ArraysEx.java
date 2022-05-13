@@ -3,7 +3,8 @@ package com.demo.collections;
 public class ArraysEx {
 	public static void main(String[] args) {
 //		primitiveArray();
-		booksArray();
+//		booksArray();
+		objectsArray();
 	}
 
 	private static void primitiveArray() {
@@ -62,5 +63,28 @@ public class ArraysEx {
 			System.out.println(book.getPrice());
 		}
 
+	}
+	private static void objectsArray() {
+		// declare array
+		Object objectArray[] = null;
+		// init array size
+		objectArray = new Object[6];
+		// assign elements
+		// arrays / indexed / similar data type / fixed in size / continuous memory
+		// locations
+//         Type mismatch: cannot convert from String to float
+//         monitorSizes[2] = "no";
+		objectArray[2] = 21.5f;
+		objectArray[1] = 35.5f;
+		objectArray[0] = 27.5f;
+		objectArray[3]= 5;
+		objectArray[4] = true;
+		Book book1 = new Book("123-1234567890", "Simon Sinek", 360f);
+		objectArray[5]= book1;
+
+		for (int i = 0; i < objectArray.length; i++) {
+			System.err.println(objectArray[i]);
+		}
+		
 	}
 }
