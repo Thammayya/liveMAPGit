@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <style>
+      body {
+         /* margin-left: 100px;
+         margin-top:  100px; */
+         margin: 5px;
+         background-color: black;
+      }
+
+      .wrapper {
+         display: grid;
+         gap: 25px;
+         /* grid-template-columns:2fr 4fr 2fr;
+         grid-template-rows: 1fr 2fr; */
+         /* shorthand */
+         /* grid : auto / auto auto auto   */
+         grid : 1fr 2fr / 2fr 5fr 2fr 
+      }
+
+      .container-grid {
+         margin: 5px;
+         background-color: red;
+         /* height: 150px;
+         width: 150px; */
+         border-radius: 15px;
+         padding: 50px;
+         font-size: 150%;
+      }
+      .container-flex {
+         margin-top :5px;
+         margin-bottom: 10px;
+         margin-left : 5px;
+         display: flex;
+         background-color: black;
+         color:cyan;
+         font-size: larger;
+      }
+
+   </style>
+</head>
+
+<body>
+   <header>
+      <div class="container-flex">
+         <div class="container-flex">MenuItem 1</div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+         <div class="container-flex">MenuItem 2</div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+         <div class="container-flex">MenuItem 3</div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+         <div class="container-flex">MenuItem 4</div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+         <div class="container-flex">MenuItem 5</div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+         <div class="container-flex">MenuItem 6</div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      </div>
+   </header>
+   <br>
+
+   <section>
+      <div class="wrapper">
+        <nav  > <div class="container-grid" style="background-color:aquamarine">Menu Item</div> </nav>
+        <section><div class="container-grid">HTML Section <br>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, quisquam voluptates magnam ipsam minima labore. Doloremque libero maxime suscipit cumque officia, nam et. Ipsum, deserunt! Temporibus ullam cum quidem totam.</div></section> 
+      <aside >   <div class="container-grid" style="background-color:beige">Advertisements : Lorem ipsum dolor sit amet</div> </aside>
+         <div class="container-grid">Element 4</div>
+         <div class="container-grid">Element 5</div>
+         <div class="container-grid">Element 6</div>
+      </div>
+   </section>
+   <footer>
+      <div class="container-flex">
+         <div class="container">Country 1</div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+         <div class="container">Country 2</div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+         <div class="container">Country 3</div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+         <div class="container">Country 4</div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+         <div class="container">Country 5</div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+         <div class="container">Country 6</div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      </div>
+   </footer>
+
+</html>
