@@ -17,9 +17,9 @@ public class Book extends Object{
 		authorName = "Unknown";
 		price = 0.0f;
 	}
-	// parameterized constructor
+	// parameterized constructor / overloaded
 	public Book(String iSBN, String authorName, float price) {
-		ISBN = iSBN;
+		this.ISBN = iSBN;
 		this.authorName = authorName;
 		this.price = price;
 	}
