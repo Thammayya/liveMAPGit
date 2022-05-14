@@ -1,0 +1,188 @@
+/* header css */
+
+body{
+    margin: 0;
+    font-family: 'Arimo', sans-serif;
+}
+.header-container{
+    background-color: black;
+    height: 15vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    /* border-bottom: 1px solid orangered; */
+}
+
+.branding img{
+    height: 10vh;
+    width: 10vw;
+    background-color: cornsilk;
+    margin-right: 30vw;
+    margin-left: 2vw;
+    border-radius: 2px; 
+    padding: 0.5vh 0.25vw;
+}
+
+.nav-links ul{
+    list-style-type: none;
+}
+
+.nav-links ul li{
+    display: inline;
+    margin-right: 2em;
+}
+
+.nav-links ul li a{
+   text-decoration: none;
+   font-weight: bold;
+   color: orangered;
+}
+
+.nav-links ul li a:hover{
+    color: cornsilk;
+}
+
+.enroll{
+    background-color:orangered;
+    color: cornsilk;
+    border: 1px solid orangered;
+    border-radius: 5px;
+    width: 8vw;
+    padding: 0.5em;
+    margin-right: 2vw;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+.enroll:hover{
+    cursor: pointer;
+    background-color:cornsilk;
+    color: orangered;
+}
+
+/* hero unit container starts */
+
+.herounit-container{
+    background: url("../images/bg.jpg");
+    height: 85vh;
+}
+
+.herounit-mask{
+    background-color:rgba(0, 0, 0, 0.4);
+    height: 85vh;
+}
+
+.herounit-mask h1{
+    margin: 0;
+    padding-left: 5vw;
+    padding-bottom: 0.25em;
+    color: orangered;
+    font-size: 2.5em;
+}
+
+.hero-caption{
+    padding-top: 25vh;
+}
+
+.herounit-mask h1:nth-child(odd){
+    color: cornsilk;
+    font-size: 1.25em;
+    
+}
+
+/* hero unit container end */
+
+/* paper layout start */
+
+.paper-layout-container{
+    background-color: rgba(0, 0, 0, .5);
+    backdrop-filter: blur(5px);
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 10vh;
+}.paper{
+    height: 30vh;
+    width: 50vw;
+}
+
+.paper-layout-container h1{
+    margin: 2em auto;
+    color: orangered;
+    background-color: black;
+    padding: .25em 1.5em;
+    border-radius: 0.5em;
+    box-shadow: 0 0 15px white;
+}
+
+.paper-layout-row{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.paper img{
+    height: 20vh;
+    width: 12vw;
+    border-radius: 5px;
+}
+
+.paper h2{
+    color: orangered;
+}
+
+
+.paper{
+    background-color: cornsilk;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 45vh;
+    width: 18vw;
+    border-radius: 1.5em;
+    box-shadow: 5px 5px 40px black;
+}
+
+.paper p{
+    padding: 0.5em 2em;
+    text-align: center;
+    font-size: 0.8em;
+}
+
+/* paper layout end */
+
+/* footer */
+footer{
+    background-color: black;
+    /* border-top: 1px solid orangered; */
+    height: 20vh;
+    color: orangered;
+    text-align: center;
+
+}
+
+footer h2{
+    width: 50vw;
+    font-size: 0.8em;
+    margin: 0 auto;
+}
+
+footer ul{
+    margin: 0;
+    padding: 1.5em;
+}
+
+footer ul li{
+
+display: inline;
+
+}
+
+footer img{
+    cursor: pointer;
+    width: 3vw;
+    height: 6vh;
+    padding-right:1em ;
+
+
+}

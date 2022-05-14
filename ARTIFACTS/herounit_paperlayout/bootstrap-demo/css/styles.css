@@ -1,0 +1,35 @@
+body{
+    margin:0;
+}
+
+.navbar-bg{
+    background-color:darkcyan !important;
+    border-bottom: 2px solid coral;
+}
+
+.navbar-brand img{
+    height:70px;
+    width:120px;
+}
+
+.navbar-nav{
+    margin-right: 90px;
+}
+
+.service-section img{
+    max-width:250px;
+}
+
+footer{
+    background-color:darkcyan;
+    color:whitesmoke;
+}
+
+footer a{
+    color:whitesmoke;
+}
+
+.fa{
+    font-size:2em;
+    padding:10px ;
+}
