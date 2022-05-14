@@ -14,6 +14,13 @@
 </head>
 
 <body>
+   <style>
+      /* internal style sheet */
+      /* style to applicable to the document */
+      span {
+         color: blue;
+      }
+   </style>
    <!-- script tag adds javascript to the page -->
    <script>
       function messageFunction() {
@@ -39,16 +46,19 @@
       omnis, odio aliquam <SPAN>SPAN :MY SPAN</SPAN> repellat enim obcaecati dicta tempora voluptas. Expedita nihil hic
       laudantium.</p>
 
+   <!-- inline styles -->
+   <span style="color:brown"> Coffee</SPAN>
+   <span style="color:green"> Tea</span>
+
+
+   <span> Pepsi</span>
+   <span> Fresh Juice</span>
    <hr />
    <form>
-      <h1>Login Form</h1><br><br>
+      <h1>Login Form</h1>
       <!-- empty elements -->
-      <label for="userName">User Name</label> <br><br>
-      <label for="userPassword">Password :</label> <br><br>
-      <input type="text" id="userName" /> <br><br><br>
-    
-
-      <input type="text" id="userPassword" /> <br><br><br>
+      <input type="text" />
+      <input type="password" />
       <!-- event : user action -->
       <button onclick="alert('simple javascript')">Message</button>
       <button onclick="messageFunction()"> Call Message Function</button>

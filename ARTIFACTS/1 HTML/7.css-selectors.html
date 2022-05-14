@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <style>
+/* all element fonts to be in red color */
+* {
+   /* https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Selectors */
+   color : red;
+}
+
+/* Type selector */
+h1 {
+   background-color: blue;
+}
+
+.best {
+   color:green;
+}
+
+#hot {
+   color :cyan
+}
+
+#cold {
+   color : blue;
+}
+
+a[href*="google"]{
+   color : purple;
+}
+
+a:active {
+   color: yellow;
+}
+
+p > span {
+   color:burlywood;
+}
+   </style>
+</head>
+<body>
+   <h1>Master Session</h1>
+   <h2>HTML Technologies</h2>
+   <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi tempora aliquam, qui magni provident deserunt? Commodi, ipsum cumque iusto atque inventore consequuntur veniam nobis? Blanditiis saepe dicta vero odit cum!</p>
+   <h3>Coffee</h3>
+   <p>Coffee is good for health! :)</p>
+   <h3> Tea</h3>
+   <p>Tea is good too.....</p>
+   <h3 class="best">Water</h3>
+   <p class="best">Water is the elixir of life....</p>
+
+   <h3 id = "hot">Hot Water</h3>
+   <p id="cold">Cold Water is the elixir of life....</p>
+
+   <a title = "Navigate to google" href="https://www.google.com">Google</a>
+   <a  href="https://www.facebook.com">Facebook</a>
+   <p>parent
+      <span>child</span>
+   </p>
+</body>
+</html>

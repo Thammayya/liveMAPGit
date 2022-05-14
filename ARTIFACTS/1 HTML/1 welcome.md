@@ -10,7 +10,8 @@
 :point_right: HTML  
 
 - Markup : set of tags understood by the browser
-
+- meta data - information about the page
+- 
 :point_right: CSS : cascading style sheet  
 - style html document
 
