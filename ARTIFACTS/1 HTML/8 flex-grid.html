@@ -21,7 +21,7 @@
          grid-template-rows: 1fr 2fr; */
          /* shorthand */
          /* grid : auto / auto auto auto   */
-         grid : 1fr 2fr / 2fr 5fr 2fr 
+         grid: 2fr 1fr / 2fr 5fr 2fr
       }
 
       .container-grid {
@@ -33,14 +33,33 @@
          padding: 50px;
          font-size: 150%;
       }
+
       .container-flex {
-         margin-top :5px;
+         margin-top: 5px;
          margin-bottom: 10px;
-         margin-left : 5px;
+         margin-left: 5px;
          display: flex;
          background-color: black;
-         color:cyan;
+         color: cyan;
          font-size: larger;
+      }
+
+      /* reponsive layout using media queries */
+      @media (max-width: 750px) {
+         .container-flex {
+            flex-direction: column;
+         }
+      }
+
+      .container-flex-side-menu {
+         /* margin-top: 5px;
+         margin-bottom: 10px;
+         margin-left: 5px; */
+         display: flex;
+         /* background-color: black; */
+         color: blue;
+         font-size: medium;
+         flex-direction: column;
       }
 
    </style>
@@ -48,23 +67,50 @@
 
 <body>
    <header>
-      <div class="container-flex">
-         <div class="container-flex">MenuItem 1</div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-         <div class="container-flex">MenuItem 2</div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-         <div class="container-flex">MenuItem 3</div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-         <div class="container-flex">MenuItem 4</div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-         <div class="container-flex">MenuItem 5</div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-         <div class="container-flex">MenuItem 6</div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      </div>
+      <h1 style="color:white">Welcome to Fictitious Application</h1>
    </header>
+      <nav>
+      <div class="container-flex">
+         <div class="container-flex">MenuItem 1</div>
+         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+         <div class="container-flex">MenuItem 2</div>
+         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+         <div class="container-flex">MenuItem 3</div>
+         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+         <div class="container-flex">MenuItem 4</div>
+         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+         <div class="container-flex">MenuItem 5</div>
+         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+         <!-- <div class="container-flex">MenuItem 6</div>
+         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -->
+      </div>
+   </nav>
+
    <br>
 
    <section>
       <div class="wrapper">
-        <nav  > <div class="container-grid" style="background-color:aquamarine">Menu Item</div> </nav>
-        <section><div class="container-grid">HTML Section <br>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, quisquam voluptates magnam ipsam minima labore. Doloremque libero maxime suscipit cumque officia, nam et. Ipsum, deserunt! Temporibus ullam cum quidem totam.</div></section> 
-      <aside >   <div class="container-grid" style="background-color:beige">Advertisements : Lorem ipsum dolor sit amet</div> </aside>
+         <nav>
+            <div class="container-grid" style="background-color:aquamarine">
+               <div class="container-flex-side-menu">
+                  <div class="container-flex-side-menu">MenuItem 1</div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  <div class="container-flex-side-menu">MenuItem 2</div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  <div class="container-flex-side-menu">MenuItem 3</div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  <!-- <div class="container-flex-side-menu">MenuItem 4</div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  <div class="container-flex-side-menu">MenuItem 5</div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  <div class="container-flex-side-menu">MenuItem 6</div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -->
+               </div></div>
+         </nav>
+         <section>
+            <div class="container-grid">HTML Section <br>
+               Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, quisquam voluptates magnam ipsam minima
+               labore. Doloremque libero maxime suscipit cumque officia, nam et. Ipsum, deserunt! Temporibus ullam cum
+               quidem totam.</div>
+         </section>
+
+         <aside>
+            <div class="container-grid" style="background-color:beige">Advertisements : Lorem ipsum dolor sit amet</div>
+         </aside>
          <div class="container-grid">Element 4</div>
          <div class="container-grid">Element 5</div>
          <div class="container-grid">Element 6</div>
