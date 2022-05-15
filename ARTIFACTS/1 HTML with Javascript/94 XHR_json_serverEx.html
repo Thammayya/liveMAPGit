@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <script>
+
+
+      function getBootstrapData() {
+         // Use XMLHttpRequest (XHR) objects to interact with servers. You can retrieve data from a URL without having to do a full page refresh. This enables a Web page to update just part of a page without disrupting what the user is doing
+         // create the request
+         console.log("step 1 create XHR")
+         var xhr = new XMLHttpRequest();
+         // register the callback
+         console.log("step 2 Register Callback")
+         xhr.addEventListener("readystatechange", function () {
+
+            if (xhr.readyState == 4 && xhr.status == 200) {
+               console.log("2.1 Asynchronously EXECUTED : DATA RECEIVED")
+               console.log("got data from server....")
+               console.log(xhr.responseText)
+            }
+         });
+         // sets the request method and URL 
+         console.log("step 3 open")
+         // async operation
+         // xhr.open("GET", "https://api.github.com/users/twbs", true );
+         // sync operation
+         // xhr.open("GET", "https://api.github.com/users/twbs", false );
+         // send the request
+
+                  // default /  operation
+         console.log("default xhr : aysnc ")
+         // xhr.open("GET", "https://api.github.com/users/twbs" );
+         alert("data from json server")
+         xhr.open("GET", "http://localhost:3000/githubusers" );
+         
+         // send the request
+         console.log("step 4 send")
+         xhr.send();
+         for(var i = 0; i< 100; i++) {
+            for(var j = 0; j< 100; j++) {}
+            console.log("step 5 " , i);     
+      };
+   }
+   </script>
+</head>
+
+<body>
+   <!-- JSON Data  Javascript Object Notation-->
+   <button onclick="getBootstrapData()">Get Data Asynchronously</button>
+</body>
+
+</html>
