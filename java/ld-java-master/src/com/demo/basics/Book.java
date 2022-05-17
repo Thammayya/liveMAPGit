@@ -32,7 +32,7 @@ public class Book extends Object{
 	public float getPrice() {
 		return price;
 	}
-	@Override
+@Override
 		public String toString() {
 			String bookString = ISBN + "\n" + authorName + "\n" + price;
 			return bookString;

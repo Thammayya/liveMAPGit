@@ -16,6 +16,7 @@ class Base {
 		System.err.println("base method");
 	}
 }
+
 class Derived extends Base{
 	
 }
