@@ -1,0 +1,29 @@
+/* child Combinator */
+div {
+  color: red;
+}
+
+.engineering {
+  background-color: blue;
+}
+
+#sam {
+  font-weight: bold;
+  color: white;
+}
+
+/* universal selector */
+* {
+  font-size: larger;
+}
+
+/* Descendant combinator */
+li {
+  list-style-type: disc;
+}
+/* child combinator */
+div > span {
+   background-color: aquamarine;
+   font-size: x-small;
+ }
+
