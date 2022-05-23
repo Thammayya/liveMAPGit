@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>My Title</title>
+</head>
+
+<body>
+
+
+   <form onsubmit="return false">
+      <p id="testPara"><b>
+            Test Data
+         </b></p>
+         <button onclick="updateTest()">UPDATE LOREM</button>
+         <script>
+         // get para node
+         var testParaElement = document.getElementById("testPara");
+         var testParaContent = testParaElement.innerHTML;
+         console.log(testParaContent)
+         </script>
+
+         <script>
+         function updateTest() {
+            var testParaElement = document.getElementById("testPara");
+            testParaElement.innerHTML = "<span style='color:aquamarine'>   Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio, saepe. Ipsam eius dolorem doloribus possimus repellat aliquid sit ipsum iusto odio, impedit ab debitis? Mollitia quidem dolorum fugiat voluptatem dolore? </span>"
+         }
+         </script>
+   </form>
+</body>
+
+</html>

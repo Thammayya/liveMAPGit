@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <script>
+      console.log("first script executed....")
+   </script>
+   <script>
+      console.log("second script executed ....")
+   </script>
+   <script>
+      // not executed automatically
+      function intScrFun() {
+         console.log("function / internal script")
+      }
+   </script>
+   <script src="03-external.js"></script>
+</head>
+<body>
+   <form onsubmit="return false">
+      <!-- inline script
+      onclick / event
+      alert("") / event handler -->
+      <button onclick="alert('Welcome to javascript')">Get Message</button>
+      <button onclick="console.log('Welcome to JS')">Say Thankyou</button>
+      <button onclick="intScrFun()">Call Function</button>
+      <button onclick="xtScrFun()">External Call Function</button>
+   </form>
+</body>
+</html>
